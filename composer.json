@@ -1,0 +1,23 @@
+{
+    "name": "hautelook/solarium-cache",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrien Brault",
+            "email": "adrien.brault@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Hautelook\\Solarium\\Cache": "src/" }
+    },
+    "require": {
+        "solarium/solarium": "~3.1",
+        "doctrine/cache": "~1.0",
+        "phpspec/prophecy-phpunit": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
