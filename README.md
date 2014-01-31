@@ -26,7 +26,7 @@ $client->registerPlugin('cache', $plugin);
 $query = $client->createSelect(array(
     'cache_lifetime' => 60,
 ));
-$client->execute($query);
+$result = $client->execute($query);
 ```
 
 ## Usage with the NelmioSolariumBundle
