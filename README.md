@@ -1,5 +1,4 @@
-Solarium Cache
-==============
+# Solarium Cache ![Travis build status](https://travis-ci.org/hautelook/solarium-cache.png)
 
 Solarium Plugin to cache queries using Doctrine Cache.
 
