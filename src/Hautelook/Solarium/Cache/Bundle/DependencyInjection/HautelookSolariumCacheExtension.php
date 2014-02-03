@@ -22,7 +22,7 @@ class HautelookSolariumCacheExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
 
         foreach ($config['clients'] as $client => $cacheId) {
-            $definition = new Definition(CachePlugin::CLASS);
+            $definition = new Definition('Hautelook\Solarium\Cache\CachePlugin');
             $definition->addMethodCall('setCache', array(new Reference($cacheId)));
             $definition->addTag('nelmio_solarium.plugin', array('client' => $client, 'key' => 'cache'));
 
