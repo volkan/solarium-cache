@@ -80,7 +80,6 @@ class CachePlugin extends Plugin
         }
 
         $event->setResponse($response);
-        $event->stopPropagation();
 
         // Make sure we do not save the $response in the cache later
         $this->currentRequestCacheProfile = null;
